@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  rails:
+    build: .
+    container_name: sales_rails
+    tty: true
+    stdin_open: true
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app:cached
+      - /app/.git
+      - /app/node_modules
+      - /app/log
+      - /app/tmp
+    command: rails s -b 0.0.0.0 -p 3000

@@ -1,0 +1,9 @@
+node_modules
+npm-debug.log
+
+log
+tmp
+.bundle
+.pry_history
+
+public/index.bundle.js
