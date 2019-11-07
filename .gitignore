@@ -6,4 +6,6 @@ tmp
 .bundle
 .pry_history
 
+vendor
+
 public/index.bundle.js
